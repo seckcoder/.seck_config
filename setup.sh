@@ -17,7 +17,8 @@ done
 if [ $os = "Linux" ]
 then
     option=-fs
-    ln $option $env/.bashrc
+    ln $option $env/.seck_bashrc
+    echo "source ~/.seck_bashrc" >> .bashrc
 elif [ $os = 'Darwin' ]
 then
     option=-Fs
