@@ -45,52 +45,13 @@ else
 endif
 "autocmd BufEnter * lcd %:p:h
 set nocompatible "vim compatible with vi is unnecessary for me
-syntax on
+syntax off
 " BEGIN vundle
 filetype off
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
 
-Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-Bundle 'tpope/vim-rails.git'
-Bundle 'mitsuhiko/vim-jinja'
-Bundle 'majutsushi/tagbar'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
-Bundle 'guns/vim-clojure-static'
-Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'tomtom/tlib_vim'
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'garbas/vim-snipmate'
-Bundle 'honza/vim-snippets'
-Bundle 'hylang/vim-hy'
-Bundle 'ehamberg/vim-cute-python'
-Bundle 'Shougo/neocomplete.vim'
-Bundle 'Shougo/vimshell.vim'
-Bundle 'Shougo/vimproc.vim'
-"Bundle 'kovisoft/slimv'
-"Bundle 'jpalardy/vim-slime'
-"Bundle 'Valloric/YouCompleteMe'
-Bundle 'seckcoder/vim-seckcoder'
-Bundle 'scrooloose/syntastic'
-Bundle 'OCamlPro/ocp-indent'
-Bundle 'ervandew/supertab'
-Bundle 'def-lkb/ocp-indent-vim'
-Bundle 'sukima/xmledit'
-" vim-scripts repos
-Bundle 'L9'
-Bundle 'FuzzyFinder'
-Bundle 'cscope.vim'
-Bundle 'a.vim'
-Bundle 'omlet.vim'
-" non github repos
-Bundle 'git://git.wincent.com/command-t.git'
-Bundle 'lunaru/vim-less'
-Bundle 'wlangstroth/vim-racket'
-" ...
-
+" pathogen
+execute pathogen#infect()
+syntax on
 if has("autocmd") "test autocmd support
     filetype plugin indent on
     augroup vimrcEx "autocmd group name for the following autocmd
