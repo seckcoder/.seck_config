@@ -5,7 +5,7 @@ env=".seck_config"
 
 cd ..
 
-if [ $os = "linux" ]
+if [ $os = "Linux" ]
 then
     ln -Fs $env/.bashrc
 elif [ $os = 'Darwin' ]
