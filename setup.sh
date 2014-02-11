@@ -18,9 +18,3 @@ for f in .vimrc .vim .emacs.d bin .ocamlinit .pythonrc .gitconfig .guile \
 do
     ln -Fs $env/$f
 done
-
-    
-
-#ln -Fs $env/.vimrc $env/.vim $env/.emacs.d $env/bin\
-    #$env/.ocamlinit $env/.pythonrc $env/.gitconfig $env/.guile\
-    #$env/.gvimrc $env/.racketrc $env/.csirc
