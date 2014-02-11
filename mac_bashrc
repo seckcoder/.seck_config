@@ -1,0 +1,73 @@
+# for white terminal
+#[[ "$TERM" == dumb ]] && PS1="\n\w@\u$"
+#[[ "$TERM" != dumb ]] && PS1="\n\[\e[1;36m\]\w\[\e[0;32m\]@\u$ \[\e[0m\]"
+
+# TODO: MODIFY THE COLOR FOR BLACK TERMINAL
+[[ "$TERM" == dumb ]] && PS1="\n\w@\u$"
+[[ "$TERM" != dumb ]] && PS1="\n\[\e[1;36m\]\w\[\e[0;32m\]@\u$ \[\e[0m\]"
+
+home=~
+alias ls='ls -G'
+
+set -o vi
+alias l="ls -l"
+alias ll="ls -al"
+alias vim="/usr/local/bin/vim"
+alias vi="/usr/local/bin/vim"
+#alias gvim="mvim"
+alias emacs="open -a /Applications/Emacs.app"
+export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
+#export PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH"
+alias ctags="/usr/local/bin/ctags"
+
+export VERSIONER_PYTHON_VERSION=2.7
+export WATERARMY=~/code/jike/Govel/water_army
+export GOVEL=~/code/jike/Govel
+export HOMEBIN=~/bin
+export PATH="$PATH:$HOMEBIN"
+
+# brew-cellar
+export BREW_Cellar_DIR=/usr/local/Cellar
+
+# thrift
+export THRIFTDIR=/usr/local/thrift
+export PATH="$PATH:$THRIFTDIR/bin"
+
+# petite
+export PCSV=/usr/local/pcsv
+export PATH="$PATH:$PCSV/bin"
+export SCHEMEHEAPDIRS="$PCSV/lib/csv8.4/a6osx"
+alias scheme='petite'
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+export PYTHONSTARTUP=~/.pythonrc
+
+# sublime package
+export SUBLIME_PACKAGE="$home/Library/Application Support/Sublime Text 3"
+
+# chicken-doc
+export CHICKEN_DOC_REPOSITORY=/usr/local/share/chicken/chicken-doc
+
+# racket
+#export RACKETDIR=$BREW_Cellar_DIR/plt-racket
+#racket_completion_bash=$RACKETDIR/5.2/lib/racket/collects/meta/contrib/completion/racket-completion.bash
+#if [ -f $racket_completion_bash ]
+#then
+    #source $racket_completion_bash
+#fi
+export RACKETDIR="/Applications/Racket v5.3.6"
+export PATH="$PATH:$RACKETDIR/bin"
+
+# git
+git_completion_bash=$BREW_Cellar_DIR/git/1.7.11/etc/bash_completion.d/git-completion.bash
+if [ -f $git_completion_bash ]
+then
+    source $git_completion_bash
+fi
+
+# latex
+export PATH="$PATH:/usr/texbin"

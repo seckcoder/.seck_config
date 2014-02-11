@@ -1,0 +1,1 @@
+.seck_config/.bashrc

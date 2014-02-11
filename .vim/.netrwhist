@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/liwei/code/jike/wtx'
+let g:netrw_dirhist_2='/usr/local/data/topicclassify/data/00_auto/00_zixun'
+let g:netrw_dirhist_3='/home/liwei/code/jike/wtx/testing/fuzzing'
+let g:netrw_dirhist_4='/home/liwei/code/pub_repo/bookmarkdown'
+let g:netrw_dirhist_5='/home/liwei/code/jike/news-dev/result/trainset'
+let g:netrw_dirhist_6='/home/liwei/code/jike/wtx/mobile/wtx/evaluation/env/lib/python2.6/site-packages/django/contrib/auth'
+let g:netrw_dirhist_7='/home/liwei/code/jike/wtx/mobile/wtx/evaluation/env/lib/python2.6/site-packages/django/contrib/admin'
+let g:netrw_dirhist_8='/home/liwei/code/jike/tt/qiangpiao/Home/Tpl/common'

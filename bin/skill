@@ -1,0 +1,15 @@
+#!/bin/sh
+# Kill of process with cmd name: 
+E_NOARGS=65
+if [ -z "$1" ]
+then
+	echo "Usage: `basename $0` COMMAND_NAME"
+	exit $E_NOARGS
+fi
+
+pid_list=`pgrep "$1"`;
+for word in $pid_list
+do
+	kill -9 $pid_list
+done
+

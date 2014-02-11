@@ -1,0 +1,129 @@
+lftp mobile-team-ftp
+ls
+exit
+lftp jikeftp
+ls
+cd 操作系统/
+ls
+cd ../
+ls
+exit
+lftp jikeftp
+ls
+cd 办公软件office/
+ls
+lpwd
+lcd ~/Download/
+lpwd
+mget OfficeVisioPro2007_cn.rar 
+ls
+exit
+lftp jike-ui
+ls
+lftp jike-ui
+ls
+lftp jike-ui
+ls
+clear
+lftp applex
+ls
+pwd
+l
+ld
+ls
+cd .
+ls
+cd ../
+ls
+lftp jikeftp
+ls
+cd 图形图像/
+ls
+cd Adobe\ cs5/
+ls
+cd ../
+ls
+exit
+lftp jikeftp
+ls
+cd 办公软件office/
+ls
+exit
+lftp jike-kpi
+ls
+user 
+lftp jike-kpi
+ls
+export LANG=zh_CN.GBK
+help
+lftp jike-kpi
+set ftp:charset "gbk"
+ls
+set ftp:charset "UTF-8"
+ls
+set ftp:charset "gbk"
+ls
+lftp jike-kpi
+ls
+cd 年终绩效考核
+ls
+cd 移动事业部/
+ls
+cd 影响力组/
+ls
+cd 李伟/
+ls
+ls 他人评价/
+ls 自我评价/
+cd ../../../
+ls
+cd ../
+ls
+help
+ls 考核模板下载/
+lpwd
+lcd ~/Document/
+lpwd
+help
+mget -d 考核模板下载/*
+ls
+exit
+lftp jike-kpi
+ls
+cd 年终绩效考核/
+ls
+cd 移动事业部/影响力组/
+ls
+cd 李伟/
+ls
+cd 自我评价/
+ls
+lls
+ls
+lpwd
+help
+put 个人总结-移动事业部-李伟.pdf 
+ls
+exit
+lftp jikeftp
+ls
+cd 操作系统/
+ls
+find windowsXP.iso 
+ls
+help
+mget windowsXP.iso 
+exit
+lftp jikeftp
+ls
+cd 操作系统/
+ls
+mget windowsXP.iso 
+lftp jikeftp
+ls
+cd 开发工具/
+ls
+lftp jikeftp
+ls
+ls desktop/
+ls software/

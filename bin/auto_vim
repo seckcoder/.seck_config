@@ -1,0 +1,13 @@
+#!/bin/bash
+# add .vim_session (the commands to execute) and .vim_default (the default
+# file to open) if nessesary
+
+def_file="."
+
+if [ -n "$1" ]; then
+    def_file=$1
+elif [ -f "./.vim_default" ]; then
+    def_file=`cat ./.vim_default`
+fi
+
+gvim -S ".vim_session" "$def_file"

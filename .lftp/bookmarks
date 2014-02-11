@@ -1,0 +1,7 @@
+visftp ftp://visftp:harmonic.vis2010@192.168.1.2:9529
+mobile-team-ftp ftp://192.168.10.12
+mobile-team-ftp-upload ftp://ftp_upload:ftp_upload@192.168.10.12
+jikeftp ftp://192.168.10.15
+jike-ui ftp://upload:upload@192.168.14.43
+applex ftp://applex:bbs.applex.net@219.138.163.29
+jike-kpi ftp://liwei:FfCpYZ9y@192.168.12.45

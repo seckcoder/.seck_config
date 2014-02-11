@@ -1,0 +1,4 @@
+#!/bin/bash
+
+mongodrop
+mongorestore $1
