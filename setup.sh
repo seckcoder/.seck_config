@@ -2,22 +2,32 @@
 
 os=`uname`
 env=".seck_config"
+option=-s
 
 cd ..
 
+for dir in .vim .emacs.d
+do
+    if [ -e $dir ]
+    then
+	rm -rf $dir
+    fi
+done
+
 if [ $os = "Linux" ]
 then
-    ln -Fs $env/.bashrc
+    option=-fs
+    ln $option $env/.bashrc
 elif [ $os = 'Darwin' ]
 then
-    ln -Fs $env/.bashrc $env/.bash_profile
+    option=-Fs
+    ln $option $env/.bashrc $env/.bash_profile
 fi
 
 for f in .vimrc .vim .emacs.d bin .ocamlinit .pythonrc .gitconfig .guile \
     .gvimrc .racketrc .csirc
 do
-#ln -Fs $env/$f
-echo "hello"
+	ln $option $env/$f
 done
 
 cd $env
