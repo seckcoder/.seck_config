@@ -1,0 +1,12 @@
+#if ( -f /bin/zsh ) exec /bin/zsh
+
+# unset PYTHONPATH   # I don't know when I set this...
+test -s ~/.alias && . ~/.alias || true
+
+alias "c=xclip"
+alias "v=xclip -o"
+alias "cb=xclip -selection clipboard"
+
+set -o vi
+
+export PATH=$PATH:~/bin
