@@ -1,1 +1,2 @@
-colorscheme robinhood
+"colorscheme robinhood
+colorscheme freya

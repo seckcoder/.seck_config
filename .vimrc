@@ -156,7 +156,7 @@ set cc=80
 let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#ParenRainbow = 1
 let g:vimclojure#DynamicHighlighting = 1
-let vimclojure#WantNailgun = 1
+let vimclojure#WantNailgun = 0
 let vimclojure#SplitPos = "left"
 let vimclojure#SplitSize = 60
 let vimclojure#FuzzyIndent = 1
@@ -287,6 +287,14 @@ let g:neocomplete#sources#omni#input_patterns.ocaml = '[^. *\t]\.\w*\|\h\w*|#'
 " syntastic for ocaml is buggy and horrible
 let g:syntastic_ocaml_checkers = ['merlin']
 let g:syntastic_python_checkers = ['pyflakes']
+let g:syntastic_haskell_checkers = ['ghc']
+let g:syntastic_cpp_compiler_options = "-std=c++11 -stdlib=libc++"
+
+
+" haskell
+au BufEnter *.hs compiler ghc
+let g:haddock_browser="open /Applications/Google\ Chrome.app"
+
 
 "set spell
 "set spelllang=en_us
