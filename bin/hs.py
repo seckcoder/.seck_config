@@ -2,6 +2,7 @@
 
 """Usage:
    hs.py install <pkg>
+   hs.py uninstall <pkg>
    hs.py link <pkg>
    hs.py -h | --help | --version
 
@@ -20,10 +21,17 @@ def link(pkg):
     print "Linking %s..." % (pkg)
     sh.call(["_hs_link.sh", pkg])
     print "Done"
+
+def uninstall(pkg):
+    print "Uninstalling %s..." % (pkg)
+    sh.call(["_hs_uninst.sh", pkg])
+    print "Done"
 def main():
     args = docopt(__doc__, version="0.0.1")
     if args["install"]:
         install(args["<pkg>"])
     elif args["link"]:
         link(args["<pkg>"])
+    elif args["uninstall"]:
+        uninstall(args["<pkg>"])
 main()

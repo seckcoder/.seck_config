@@ -11,5 +11,5 @@ else
     mkdir $pkg
     cd $pkg
     cabal sandbox init
-    cabal install $pkg
+    cabal install $pkg --with-gcc /usr/local/bin/gcc-4.9
 fi

@@ -292,8 +292,7 @@ let g:syntastic_cpp_compiler_options = "-std=c++11 -stdlib=libc++"
 
 
 " haskell
-au BufEnter *.hs compiler ghc
-let g:haddock_browser="open /Applications/Google\ Chrome.app"
+"au BufEnter *.hs compiler ghc
 
 
 "set spell
